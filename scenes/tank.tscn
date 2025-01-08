@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://q7g35h2174y4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ln5lw"]
+size = Vector2(28, 28)
+
+[node name="Tank" type="CharacterBody2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 29.0
+offset_bottom = 28.0
+color = Color(1, 0, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14, 14)
+shape = SubResource("RectangleShape2D_ln5lw")

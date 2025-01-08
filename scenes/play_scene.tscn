@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://7rpmedvjdous"]
+
+[ext_resource type="PackedScene" uid="uid://q7g35h2174y4" path="res://scenes/tank.tscn" id="1_62cl3"]
+
+[node name="PlayScene" type="Node2D"]
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1149.0
+offset_bottom = 648.0
+color = Color(0, 0, 0.2, 1)
+
+[node name="Tank" parent="." instance=ExtResource("1_62cl3")]
+position = Vector2(536, 534)
